@@ -1,0 +1,51 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #686262;
+}
+
+a {
+  box-shadow: none !important;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+nav {
+  height: 40px;
+  background-color: transparent;
+  color: #fff;
+}
+nav:hover {
+  background-color: #fff;
+}
+nav:hover a {
+  color: #000;
+}
+nav:hover .top-head a {
+  color: #afaaaa;
+  text-decoration: none;
+}
+nav .top-head {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+}
+nav .top-head .top-head-item {
+  border-right: 1px solid #afaaaa;
+}
+nav .top-head .top-head-item a:hover {
+  color: #c00;
+}
+nav .top-head .top-head-item .drop-office {
+  position: relative;
+  background-color: #fff;
+  color: #c00;
+}
+
+/*# sourceMappingURL=style.css.map */

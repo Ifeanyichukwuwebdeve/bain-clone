@@ -1,0 +1,64 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+$white: #fff;
+$dark: #000;
+$gray: #afaaaa;
+$red: #c00;
+
+body {
+	background-color: rgb(104, 98, 98);
+}
+
+a {
+	box-shadow: none !important;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+nav {
+	height: 40px;
+	// display: flex;
+	// align-items: center;
+	background-color: transparent;
+	color: $white;
+
+	&:hover {
+		background-color: $white;
+		a {
+			color: $dark;
+		}
+		.top-head {
+			a {
+				color: $gray;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.top-head {
+		padding-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		font-size: 0.78rem;
+
+		.top-head-item {
+			border-right: 1px solid $gray;
+			a {
+				&:hover {
+					color: $red;
+				}
+			}
+
+			.drop-office {
+				position: relative;
+				background-color: $white;
+				color: $red;
+			}
+		}
+	}
+}
