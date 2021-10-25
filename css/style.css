@@ -4,11 +4,16 @@
 }
 
 body {
-  background-color: #686262;
+  background-color: #fff;
 }
 
 a {
-  box-shadow: none !important;
+  margin: 0 15px;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  padding-bottom: 5px;
 }
 
 main {
@@ -16,9 +21,12 @@ main {
 }
 
 nav {
-  height: 40px;
   background-color: transparent;
-  color: #fff;
+  color: #09a750;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
 }
 nav:hover {
   background-color: #fff;
@@ -30,6 +38,15 @@ nav:hover .top-head a {
   color: #afaaaa;
   text-decoration: none;
 }
+nav:hover .top-head i {
+  transition: 1ms;
+}
+nav:hover .second-nav .wrapper .logo a {
+  color: #000;
+}
+nav:hover .second-nav .wrapper .nav-links li a {
+  color: #000;
+}
 nav .top-head {
   padding-top: 10px;
   display: flex;
@@ -40,12 +57,207 @@ nav .top-head .top-head-item {
   border-right: 1px solid #afaaaa;
 }
 nav .top-head .top-head-item a:hover {
+  color: #0b1f64;
+}
+nav .drop-office {
+  display: none;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  z-index: 1000;
+  top: 40px;
+}
+nav .drop-office .office-items {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-right: 1px solid #afaaaa;
+  text-align: left;
+}
+nav .drop-office .office-items h4 {
+  text-align: left;
+}
+nav .drop-office .office-items a:hover {
+  color: #0b1f64;
+}
+nav .second-nav .wrapper {
+  position: relative;
+  max-width: 1300px;
+  padding: 0px 30px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+nav .second-nav .wrapper .logo a {
+  color: #09a750;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav .second-nav .wrapper .nav-links {
+  display: inline-flex;
+}
+nav .second-nav .nav-links li {
+  list-style: none;
+}
+nav .second-nav .nav-links li a {
+  color: #09a750;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+nav .second-nav .nav-links li:hover .drop-menu,
+nav .second-nav .nav-links li:hover .mega-box {
+  transition: all 0.3s ease;
+  top: 58px;
+  opacity: 1;
+  visibility: visible;
+}
+nav .second-nav .mega-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav .second-nav .mega-box .content {
+  background: #fff;
+  padding-top: 17px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+nav .second-nav .mega-box .content a:hover {
+  color: #c00 !important;
+}
+nav .second-nav .mega-box .content header {
+  height: 30px;
+}
+nav .second-nav .mega-box .content header a {
+  font-size: 15px;
+  margin: 0px;
+}
+nav .second-nav .mega-box .content ul li {
+  list-style: none;
+  display: block;
+  height: 40px;
+}
+nav .second-nav .mega-box .content .mega-links {
+  padding: 10px;
+}
+nav .second-nav .mega-box .content .mega-links li a {
+  color: #afaaaa !important;
+  font-size: 13px;
+  margin: 0px;
+}
+nav .second-nav .mega-box .content .mega-links li a:hover {
+  color: #c00 !important;
+}
+
+nav input {
+  display: none;
+}
+
+.body-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.body-text div {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.banner .slider {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.banner .slider #slideImg {
+  width: 100%;
+  height: 100%;
+  animation: zoom 6s linear infinite;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1.3);
+  }
+  15% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+.banner .overlay {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  position: absolute;
+  top: 0;
+}
+
+.side-nav {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  position: fixed;
+  top: 0;
+  display: flex;
+}
+.side-nav .side-container {
+  background-color: #fff;
+  width: 30%;
+  height: 100vh;
+}
+.side-nav .side-container a {
+  text-decoration: none;
+  color: #000;
+}
+.side-nav .side-container a:hover {
   color: #c00;
 }
-nav .top-head .top-head-item .drop-office {
-  position: relative;
-  background-color: #fff;
+.side-nav .side-container .side-element {
+  list-style: none;
+}
+.side-nav .side-container .side-element .logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.side-nav .side-container .side-element .logo a {
+  font-size: 30px;
   color: #c00;
+}
+.side-nav .close {
+  background-color: #c00;
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
