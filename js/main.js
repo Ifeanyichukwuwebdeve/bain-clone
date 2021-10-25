@@ -31,3 +31,16 @@ function slider() {
 	i++
 	setTimeout('slider()', 6000)
 }
+
+// Code for the side bar
+
+const openCloseContent = (closeElement, openElement) => {
+	document.querySelector(closeElement).style.display = 'none'
+	document.querySelector(openElement).style.display = 'block'
+}
+const closeSidebar = () => {
+	document.querySelector('.side-nav').style.display = 'none'
+}
+const openSideBar = () => {
+	document.querySelector('.side-nav').style.display = 'flex'
+}
