@@ -3,14 +3,24 @@
   margin: 0px;
 }
 
+@font-face {
+  font-family: "zen";
+  src: local("zen"), url(../fonts/ZenKurenaido-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "muli";
+  src: local("muli"), url(../fonts/Muli.ttf) format("truetype");
+}
 body {
   background-color: #fff;
+  font-family: "zen";
 }
 
 a {
   margin: 0 15px;
   color: inherit;
   text-decoration: none;
+  font-family: "muli";
 }
 a:hover {
   padding-bottom: 5px;
@@ -32,7 +42,7 @@ nav:hover {
   background-color: #fff;
 }
 nav:hover a {
-  color: #000;
+  color: #0b1f64;
 }
 nav:hover .top-head a {
   color: #afaaaa;
@@ -42,17 +52,17 @@ nav:hover .top-head i {
   transition: 1ms;
 }
 nav:hover .second-nav .wrapper .logo a {
-  color: #000;
+  color: #0b1f64;
 }
 nav:hover .second-nav .wrapper i {
-  color: #000;
+  color: #0b1f64;
 }
 nav:hover .second-nav .wrapper .nav-links li a {
-  color: #000;
+  color: #0b1f64;
 }
 nav .top-head {
   padding-top: 10px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   font-size: 0.78rem;
 }
@@ -102,7 +112,7 @@ nav .second-nav i {
   cursor: pointer;
 }
 nav .second-nav .wrapper .nav-links {
-  display: inline-flex;
+  display: none;
 }
 nav .second-nav .nav-links li {
   list-style: none;
@@ -189,19 +199,19 @@ nav input {
 
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 45vh;
   position: relative;
   overflow: hidden;
 }
 .banner .slider {
   width: 100%;
-  height: 100vh;
+  height: 45vh;
   position: absolute;
   top: 0;
 }
 .banner .slider #slideImg {
   width: 100%;
-  height: 100%;
+  height: 45vh;
   animation: zoom 6s linear infinite;
 }
 @keyframes zoom {
@@ -220,7 +230,7 @@ nav input {
 }
 .banner .overlay {
   width: 100%;
-  height: 100vh;
+  height: 45vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   position: absolute;
   top: 0;
@@ -237,7 +247,7 @@ nav input {
 }
 .side-nav .side-container {
   background-color: #fff;
-  width: 25%;
+  width: 85%;
   height: 100vh;
   overflow: auto;
   display: flex;
@@ -245,10 +255,10 @@ nav input {
 }
 .side-nav .side-container a {
   text-decoration: none;
-  color: #000;
+  color: #09a750;
 }
 .side-nav .side-container a:hover {
-  color: #c00;
+  color: #09a750;
 }
 .side-nav .side-container .first-nav-element {
   list-style: none;
@@ -260,7 +270,7 @@ nav input {
 }
 .side-nav .side-container .first-nav-element .logo a {
   font-size: 30px;
-  color: #c00;
+  color: #09a750;
 }
 .side-nav .side-container .first-nav-element .side-item {
   padding-top: 20px;
@@ -283,7 +293,8 @@ nav input {
 .side-nav .side-container .about-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .about-nav-element .logo a {
   font-size: 13px;
@@ -301,6 +312,10 @@ nav input {
 .side-nav .side-container .about-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #0b1f64;
+}
+.side-nav .side-container .about-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .about-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -314,7 +329,8 @@ nav input {
 .side-nav .side-container .people-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .people-nav-element .logo a {
   font-size: 13px;
@@ -332,6 +348,10 @@ nav input {
 .side-nav .side-container .people-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #800080;
+}
+.side-nav .side-container .people-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .people-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -345,7 +365,8 @@ nav input {
 .side-nav .side-container .capabilties-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .capabilties-nav-element .logo a {
   font-size: 13px;
@@ -363,6 +384,10 @@ nav input {
 .side-nav .side-container .capabilties-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #0b1f64;
+}
+.side-nav .side-container .capabilties-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .capabilties-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -376,7 +401,8 @@ nav input {
 .side-nav .side-container .organize-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .organize-nav-element .logo a {
   font-size: 13px;
@@ -394,6 +420,10 @@ nav input {
 .side-nav .side-container .organize-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #800080;
+}
+.side-nav .side-container .organize-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .organize-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -407,7 +437,8 @@ nav input {
 .side-nav .side-container .leadership-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .leadership-nav-element .logo a {
   font-size: 13px;
@@ -425,6 +456,10 @@ nav input {
 .side-nav .side-container .leadership-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #c00;
+}
+.side-nav .side-container .leadership-nav-element .side-item a:hover {
+  color: #09a750;
 }
 .side-nav .side-container .leadership-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -438,7 +473,8 @@ nav input {
 .side-nav .side-container .human-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .human-nav-element .logo a {
   font-size: 13px;
@@ -456,6 +492,10 @@ nav input {
 .side-nav .side-container .human-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #0b1f64;
+}
+.side-nav .side-container .human-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .human-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -469,7 +509,8 @@ nav input {
 .side-nav .side-container .customer-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .customer-nav-element .logo a {
   font-size: 13px;
@@ -487,6 +528,10 @@ nav input {
 .side-nav .side-container .customer-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #0b1f64;
+}
+.side-nav .side-container .customer-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .customer-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -500,7 +545,8 @@ nav input {
 .side-nav .side-container .sme-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .sme-nav-element .logo a {
   font-size: 13px;
@@ -518,6 +564,10 @@ nav input {
 .side-nav .side-container .sme-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #0b1f64;
+}
+.side-nav .side-container .sme-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .sme-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -531,7 +581,8 @@ nav input {
 .side-nav .side-container .digital-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .digital-nav-element .logo a {
   font-size: 13px;
@@ -549,6 +600,10 @@ nav input {
 .side-nav .side-container .digital-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #0b1f64;
+}
+.side-nav .side-container .digital-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .digital-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -562,7 +617,8 @@ nav input {
 .side-nav .side-container .research-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .research-nav-element .logo a {
   font-size: 13px;
@@ -580,6 +636,10 @@ nav input {
 .side-nav .side-container .research-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #0b1f64;
+}
+.side-nav .side-container .research-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .research-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -593,7 +653,8 @@ nav input {
 .side-nav .side-container .product-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .product-nav-element .logo a {
   font-size: 13px;
@@ -611,6 +672,10 @@ nav input {
 .side-nav .side-container .product-nav-element .side-item a {
   font-size: 13px;
   font-weight: bold;
+  color: #0b1f64;
+}
+.side-nav .side-container .product-nav-element .side-item a:hover {
+  color: #c00;
 }
 .side-nav .side-container .product-nav-element .side-item a i {
   transform: rotate(-85deg);
@@ -624,7 +689,8 @@ nav input {
 .side-nav .side-container .industrial-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .industrial-nav-element .logo a {
   font-size: 13px;
@@ -655,7 +721,8 @@ nav input {
 .side-nav .side-container .insights-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .insights-nav-element .logo a {
   font-size: 13px;
@@ -686,7 +753,8 @@ nav input {
 .side-nav .side-container .careers-nav-element .logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px 0px 1px 0px solid #afaaaa;
+  border-bottom: 1px solid #afaaaa;
+  width: 100%;
 }
 .side-nav .side-container .careers-nav-element .logo a {
   font-size: 13px;
@@ -717,6 +785,32 @@ nav input {
   height: 50px;
   font-size: 18px;
   cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  nav .top-head {
+    display: flex;
+  }
+  nav .second-nav .wrapper .nav-links {
+    display: inline-flex;
+  }
+
+  .side-nav .side-container {
+    width: 25%;
+  }
+
+  .banner {
+    height: 100vh;
+  }
+  .banner .slider {
+    height: 100vh;
+  }
+  .banner .slider #slideImg {
+    height: 100%;
+  }
+  .banner .overlay {
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
