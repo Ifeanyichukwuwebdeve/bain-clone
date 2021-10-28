@@ -92,6 +92,9 @@ nav .drop-office .office-items h4 {
 nav .drop-office .office-items a:hover {
   color: #0b1f64;
 }
+nav .capacity-overflow .mega-box .content .row {
+  overflow: auto;
+}
 nav .second-nav .wrapper {
   position: relative;
   max-width: 1300px;
@@ -107,6 +110,10 @@ nav .second-nav .wrapper .logo a {
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
+}
+nav .second-nav .wrapper .logo a img {
+  width: 154px;
+  padding-bottom: 10px;
 }
 nav .second-nav i {
   cursor: pointer;
@@ -147,9 +154,7 @@ nav .second-nav .mega-box .content {
   padding-top: 17px;
   padding-bottom: 40px;
   padding-left: 60px;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
 }
 nav .second-nav .mega-box .content a:hover {
   color: #c00 !important;
@@ -257,8 +262,8 @@ nav input {
   text-decoration: none;
   color: #09a750;
 }
-.side-nav .side-container a:hover {
-  color: #09a750;
+.side-nav .side-container a img {
+  width: 220px;
 }
 .side-nav .side-container .first-nav-element {
   list-style: none;
