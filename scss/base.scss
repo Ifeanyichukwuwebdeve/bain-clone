@@ -4,8 +4,9 @@
 }
 
 @font-face {
-	font-family: 'zen';
-	src: local('zen'), url(../fonts/ZenKurenaido-Regular.ttf) format('truetype');
+	font-family: 'Merriweather';
+	src: local('Merriweather'),
+		url(../fonts/Merriweather-BoldItalic.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'muli';
@@ -20,7 +21,7 @@ $blue: #0b1f64;
 $red: #c00;
 $purple: #800080;
 $anchor-font: 'muli';
-$reqular-font: 'zen';
+$reqular-font: 'Merriweather';
 
 body {
 	background-color: $white;
@@ -855,6 +856,9 @@ nav input {
 		cursor: pointer;
 	}
 }
+
+@import 'home';
+@import 'footer';
 
 @media (min-width: 1000px) {
 	nav {

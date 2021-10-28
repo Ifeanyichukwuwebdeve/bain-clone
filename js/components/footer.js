@@ -5,18 +5,25 @@ class Footer extends HTMLElement {
 
 	connectedCallback() {
 		this.innerHTML = `
-      <footer>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul class="social-row">
-          <li><a href="https://github.com/my-github-profile"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://twitter.com/my-twitter-profile"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/my-linkedin-profile"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-      </footer>
+      <footer class="footer">
+			<div class="container">
+				<div class="row justify-content-around">
+					<div class="col-12 col-md-3"><img src="./img/logo.png" alt="" /></div>
+					<div class="col-12 col-md-5">
+						<p>
+							Concinnity is a trusted partner in enabling organisations to
+							develop and realise their vision for success. We provide the
+							constellations of distinctive advantages organisations need for
+							enhanced performance and sustained growth.
+						</p>
+					</div>
+					<div class="col-12 col-md-3">
+						<p>T: +234 7011 5914 38</p>
+						<p>E: hello@concinnity.com</p>
+					</div>
+				</div>
+			</div>
+		</footer>
     `
 	}
 }

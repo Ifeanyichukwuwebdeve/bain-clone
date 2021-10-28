@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Bain</title>
+		<title>Concinnity</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
 			rel="stylesheet"
@@ -20,664 +20,65 @@
 		/>
 	</head>
 	<body onload="slider()">
-		<!-- <nav-component></nav-component> -->
 		<div class="banner">
 			<div class="slider">
 				<img src="./img/calculate.jpg" alt="" id="slideImg" />
 			</div>
 			<div class="overlay">
-				<header>
-					<nav class="main-nav">
-						<div class="container-fluid">
-							<div class="top-head">
-								<ul class="top-head-list">
-									<li class="top-head-item">
-										<a href="#">CONTACT</a>
-									</li>
-									<li class="top-head-item"><a href="#">ALUMNI</a></li>
-									<li class="top-head-item"><a href="#">ABOUT US</a></li>
-								</ul>
-								<ul class="top-head-list">
-									<li class="top-head-item">
-										<a href="#"><i class="fab fa-facebook"></i></a>
-									</li>
-									<li class="top-head-item">
-										<a href="#"><i class="fab fa-twitter"></i></a>
-									</li>
-									<li class="top-head-item">
-										<a href="#"><i class="fab fa-linkedin-in"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="second-nav">
-							<div class="wrapper">
-								<div class="logo">
-									<div class="flex-logo">
-										<i class="fas fa-bars" onclick="openSideBar()"></i>
-										<a href="#"><img src="./img/logo.png" alt="logo" /></a>
-									</div>
-								</div>
-								<input type="radio" name="slider" id="menu-btn" />
-								<input type="radio" name="slider" id="close-btn" />
-								<ul class="nav-links">
-									<li>
-										<a href="#" class="desktop-item">ABOUT US </a>
-										<input type="checkbox" id="showMega" />
-										<div class="mega-box">
-											<div class="content">
-												<div class="row justify-content-center">
-													<div class="col-6">
-														<header><a href="#">What We Believe</a></header>
-													</div>
-													<div class="col-6">
-														<header><a href="#">What We do</a></header>
-													</div>
-													<div class="col-6">
-														<header>
-															<a href="#">Our People & Leadership</a>
-														</header>
-														<ul class="mega-links">
-															<li><a href="#">oMessage from Our MD</a></li>
-														</ul>
-													</div>
-													<div class="col-6">
-														<header>
-															<a href="#">Corporate Citizenship</a>
-														</header>
-													</div>
-													<div class="col-6">
-														<header><a href="#">Alliance Ecosystem</a></header>
-													</div>
-													<div class="col-6">
-														<header><a href="#">Contact Concinnity</a></header>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="capacity-overflow">
-										<a href="#" class="desktop-item">CAPABILITIES</a>
-										<input type="checkbox" id="showMega" />
-										<div class="mega-box">
-											<div class="content">
-												<div class="row justify-content-center">
-													<div class="col-3">
-														<header>
-															<a href="#">ORGANISATION EFFECTIVENESS </a>
-														</header>
-														<ul class="mega-links">
-															<li><a href="#">Leadership Development</a></li>
-															<li><a href="#">Leadership Academy</a></li>
-															<li><a href="#">Leading from the Middle</a></li>
-															<li><a href="#">HR Solutions</a></li>
-															<li><a href="#">Talent Acquisition</a></li>
-															<li><a href="#">Group and Team Dynamics </a></li>
-														</ul>
-													</div>
-													<div class="col-3">
-														<header><a href="#">HUMAN CAPITAL </a></header>
-														<ul class="mega-links">
-															<li><a href="#">Learning & Development</a></li>
-															<li>
-																<a href="#">Skills & Competency Development </a>
-															</li>
-															<li><a href="#">Educational Development </a></li>
-															<li><a href="#">Distance Learning</a></li>
-														</ul>
-													</div>
-													<div class="col-3">
-														<header><a href="#">CUSTOMER ENGAGEMENT</a></header>
-														<ul class="mega-links">
-															<li><a href="#">Strategic Marketing</a></li>
-															<li>
-																<a href="#">Service Excellence</a>
-															</li>
-															<li><a href="#">Loyalty Marketing</a></li>
-															<li><a href="#">Customer Research</a></li>
-														</ul>
-													</div>
-													<div class="col-3">
-														<header><a href="#">SME ADVISORY</a></header>
-														<ul class="mega-links">
-															<li><a href="#">Startup Clinic</a></li>
-															<li>
-																<a href="#">Enterprise Development</a>
-															</li>
-															<li><a href="#">SME Financing </a></li>
-															<li>
-																<a href="#">SME Capacity Building & Training</a>
-															</li>
-														</ul>
-													</div>
-													<div class="col-4">
-														<header><a href="#">DIGITAL SOLUTIONS</a></header>
-														<ul class="mega-links">
-															<li>
-																<a href="#">Knowledge Management System</a>
-															</li>
-															<li>
-																<a href="#">Distance Learning</a>
-															</li>
-															<li><a href="#">SME Digital Solutions</a></li>
-															<li>
-																<a href="#">Digital Skills & Capabilities</a>
-															</li>
-														</ul>
-													</div>
-													<div class="col-4">
-														<header>
-															<a href="#">RESEARCH & ANALYTICS</a>
-														</header>
-														<ul class="mega-links">
-															<li><a href="#">Data & Analytics </a></li>
-															<li>
-																<a href="#">Marketing Research</a>
-															</li>
-															<li><a href="#">Customer Research</a></li>
-														</ul>
-													</div>
-													<div class="col-4">
-														<header><a href="#">PRODUCTS</a></header>
-														<ul class="mega-links">
-															<li><a href="#">Leading from the Middle </a></li>
-															<li>
-																<a href="#">LibStor</a>
-															</li>
-															<li><a href="#">I-CANDO Digital Literacy</a></li>
-															<li><a href="#">eSkill the Nation</a></li>
-															<li><a href="#">Leadership Academy</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<a href="#" class="desktop-item">INDUSTRIES</a>
-										<input type="checkbox" id="showMega" />
-										<div class="mega-box">
-											<div class="content">
-												<div class="row justify-content-center">
-													<div class="col-12">
-														<header><a href="#">Industries We Serve</a></header>
-														<header><a href="#">Clients</a></header>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<a href="#" class="desktop-item">INSIGHTS</a>
-										<input type="checkbox" id="showMega" />
-										<div class="mega-box">
-											<div class="content">
-												<div class="row justify-content-center">
-													<div class="col-12">
-														<header><a href="#">Featured Highlights</a></header>
-														<header><a href="#">Media Centre</a></header>
-														<header><a href="#">Resource Centre</a></header>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<a href="#" class="desktop-item">CAREERS</a>
-										<input type="checkbox" id="showMega" />
-										<div class="mega-box">
-											<div class="content">
-												<div class="row justify-content-center">
-													<div class="col-12">
-														<header><a href="#">Explore Our Culture</a></header>
-														<header><a href="#">Join Us</a></header>
-														<header><a href="#">Alumni Network</a></header>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</header>
+				<nav-component></nav-component>
 			</div>
 		</div>
-		<div class="side-nav">
-			<div class="side-container">
-				<ul class="first-nav-element">
-					<li class="logo">
-						<a href="#" class="side-item-link"
-							><img src="./img/logo.png" alt="logo"
-						/></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.first-nav-element', '.about-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>ABOUT US <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.first-nav-element', '.capabilties-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>CAPABILITIES <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.first-nav-element', '.industrial-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>INDUSTRIES <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.first-nav-element', '.insights-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>INSIGHTS <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.first-nav-element', '.careers-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>CAREERS <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<hr />
-				</ul>
-				<!-- About contents -->
-				<ul class="about-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.about-nav-element', '.first-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> Main menu</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">What We Believe</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">What We do</a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.about-nav-element', '.people-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>Our People & Leadership <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Corporate Citizenship</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Alliance Ecosystem</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Contact Concinnity</a>
-					</li>
-				</ul>
-				<ul class="people-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.people-nav-element', '.about-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> ABOUT US</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">oMessage from Our MD</a>
-					</li>
-				</ul>
-				<!-- End of About -->
-				<!-- CAPABILITIES -->
-				<ul class="capabilties-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.capabilties-nav-element', '.first-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> Main menu</a
-						>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.capabilties-nav-element', '.organize-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>ORGANISATION EFFECTIVENESS <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.capabilties-nav-element', '.human-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>HUMAN CAPITAL <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.capabilties-nav-element', '.customer-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>CUSTOMER ENGAGEMENT <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.capabilties-nav-element', '.sme-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>SME ADVISORY <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.capabilties-nav-element', '.digital-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>DIGITAL SOLUTIONS <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.capabilties-nav-element', '.research-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>RESEARCH & ANALYTICS <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.capabilties-nav-element', '.product-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>PRODUCTS <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-				</ul>
-				<!-- ORGANIZE contents -->
-				<ul class="organize-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.organize-nav-element', '.capabilties-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> ORGANISATION EFFECTIVENESS</a
-						>
-					</li>
-					<li
-						class="side-item"
-						onclick="openCloseContent('.organize-nav-element', '.leadership-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							>Leadership Development <i class="fas fa-caret-down"></i
-						></a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">HR Solutions</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Talent Acquisition</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Group and Team Dynamics </a>
-					</li>
-				</ul>
+		<sidebar-nav-component></sidebar-nav-component>
+		<main>
+			<section class="about-us text-left">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-md-8 about-content">
+							<div class="content">
+								<h3>
+									It's a new world, and we are here to help you take it on.
+								</h3>
+								<h4 class="py-4">‘’Enduring Value. Delivered.’’</h4>
+								<p>
+									At Concinnity, Enduring characteristics define who we are;
+									Enduring values guide our actions; Enduring solutions help our
+									clients succeed.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 about-content"></div>
+					</div>
+				</div>
+			</section>
 
-				<ul class="leadership-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.leadership-nav-element', '.organize-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> Leadership Development</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Leadership Academy</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Leading from the Middle</a>
-					</li>
-				</ul>
-				<!-- Human capital content -->
-				<ul class="human-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.human-nav-element', '.capabilties-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> Human CAPITAL</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link"
-							>Skills & Competency Development</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Learning & Development</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Educational Development </a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Distance Learning</a>
-					</li>
-				</ul>
-				<!-- CUSTOMER ENGAGEMENT content -->
-				<ul class="customer-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.customer-nav-element', '.capabilties-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> CUSTOMER ENGAGEMENT</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Strategic Marketing</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Service Excellence</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Loyalty Marketing</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Cause Marketing</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Customer Research</a>
-					</li>
-				</ul>
-				<!-- SME ADVISORY content -->
-				<ul class="sme-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.sme-nav-element', '.capabilties-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> SME ADVISORY</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Startup Clinic</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Enterprise Development</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">SME Financing</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link"
-							>SME Capacity Building & Training</a
-						>
-					</li>
-				</ul>
-				<!-- DIGITAL SOLUTIONS content -->
-				<ul class="digital-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.digital-nav-element', '.capabilties-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> DIGITAL SOLUTIONS</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Knowledge Management System</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Distance Learning</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">SME Digital Solutions</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Digital Skills & Capabilities</a>
-					</li>
-				</ul>
-				<!-- RESEARCH & ANALYTICS content -->
-				<ul class="research-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.research-nav-element', '.capabilties-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> RESEARCH & ANALYTICS</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Data & Analytics</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Marketing Research</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Customer Research</a>
-					</li>
-				</ul>
-				<!-- PRODUCTS  content -->
-				<ul class="product-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.product-nav-element', '.capabilties-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> PRODUCTS</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Leading from the Middle</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">LibStor</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">I-CANDO Digital Literacy</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">eSkill the Nation</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Leadership Academy</a>
-					</li>
-				</ul>
+			<section class="message-from-md">
+				<div class="container">
+					<div class="content">
+						<h4>Enduring Value Delivered</h4>
+						<p>
+							Concinnity is a trusted partner in enabling organisations to
+							develop and realise their vision for success. We provide the
+							constellations of distinctive advantages organisations need for
+							enhanced performance and sustained growth.
+						</p>
+						<p>
+							We enable our clients to meet the increasing challenges of being
+							innovative, resilient and competitive. Leveraging our philosophy,
+							culture and core values, we create enduring value for our clients,
+							our people and the community.
+						</p>
+						<a href="./messageMD.html">READ MORE</a>
+					</div>
+				</div>
+			</section>
+		</main>
 
-				<!-- End of Capabilityies -->
-
-				<!-- industrial  content -->
-				<ul class="industrial-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.industrial-nav-element', '.first-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> Main menu</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Industries We Serve</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Clients </a>
-					</li>
-				</ul>
-
-				<!-- End of industrial -->
-
-				<!-- insights  content -->
-				<ul class="insights-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.insights-nav-element', '.first-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> Main menu</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Featured Highlights </a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Media Centre</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Resource Centre</a>
-					</li>
-				</ul>
-
-				<!-- End of insights -->
-
-				<!-- Careers  content -->
-				<ul class="careers-nav-element">
-					<li
-						class="logo"
-						onclick="openCloseContent('.careers-nav-element', '.first-nav-element')"
-					>
-						<a href="#" class="side-item-link"
-							><i class="fas fa-caret-down"></i> Main menu</a
-						>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Explore Our Culture</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Join Us</a>
-					</li>
-					<li class="side-item">
-						<a href="#" class="side-item-link">Alumni Network</a>
-					</li>
-				</ul>
-
-				<!-- End of Careers -->
-			</div>
-			<div class="close" onclick="closeSidebar()">
-				<i class="fas fa-times"></i>
-			</div>
-		</div>
-		<main></main>
-		<!-- <footer-component></footer-component> -->
+		<footer-component></footer-component>
 
 		<script src="./js/main.js"></script>
 		<script src="./js/bootstrap.bundle.min.js"></script>
-		<!-- <script src="./js/components/header.js"></script> -->
-		<!-- <script src="./js/components/footer.js"></script> -->
+		<script src="./js/components/header.js"></script>
+		<script src="./js/components/sidebar.js"></script>
+		<script src="./js/components/footer.js"></script>
 	</body>
 </html>

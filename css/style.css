@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: "zen";
-  src: local("zen"), url(../fonts/ZenKurenaido-Regular.ttf) format("truetype");
+  font-family: "Merriweather";
+  src: local("Merriweather"), url(../fonts/Merriweather-BoldItalic.ttf) format("truetype");
 }
 @font-face {
   font-family: "muli";
@@ -13,7 +13,7 @@
 }
 body {
   background-color: #fff;
-  font-family: "zen";
+  font-family: "Merriweather";
 }
 
 a {
@@ -790,6 +790,53 @@ nav input {
   height: 50px;
   font-size: 18px;
   cursor: pointer;
+}
+
+.about-us {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 40vh;
+}
+.about-us .about-content {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+.about-us .about-content:last-child {
+  background-image: url("../img/about-us.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.message-from-md {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/calculate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.message-from-md a:hover {
+  color: #c00;
+}
+
+@media (min-width: 1000px) {
+  .message-from-md .content {
+    width: 60%;
+  }
+}
+.footer {
+  background-color: #000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+.footer img {
+  width: 154px;
 }
 
 @media (min-width: 1000px) {

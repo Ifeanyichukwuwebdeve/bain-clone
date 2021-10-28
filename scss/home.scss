@@ -1,0 +1,42 @@
+.about-us {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	height: 40vh;
+	.about-content {
+		height: 40vh;
+		display: flex;
+		align-items: center;
+	}
+	.about-content:last-child {
+		background-image: url('../img/about-us.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.message-from-md {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url('../img/calculate.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $white;
+	a {
+		&:hover {
+			color: $red;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.message-from-md {
+		.content {
+			width: 60%;
+		}
+	}
+}
