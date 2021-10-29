@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Concinnity</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -19,21 +20,79 @@
 			href="css/style.css"
 		/>
 	</head>
-	<body onload="slider()">
-		<div class="banner">
-			<div class="slider">
-				<img src="./img/calculate.jpg" alt="" id="slideImg" />
-			</div>
-			<div class="overlay">
-				<nav-component></nav-component>
-			</div>
-		</div>
+	<body>
+		<nav-component></nav-component>
 		<sidebar-nav-component></sidebar-nav-component>
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="col-6">
+							<h4>REALISING THE POTENTIAL OF DIGITAL TRANSFORMATION</h4>
+							<p class="slide-text">
+								Our digital transformation helps organisations to create new
+								digital opportunities that drive business growth and customer
+								value.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="col-6">
+							<h4>Create Customer Passion</h4>
+							<p>
+								We help businesses put the customer at the heart of everything
+								they do and enable them to optimise customer lifetime value.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="col-6">
+							<h4>LEARN. PERFORM. TRANSFORM.</h4>
+							<p>
+								Concinnity creates the people advantage required for driving
+								business performance and growth.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="col-6">
+							<h4>CLEAR THINKING. STRAIGHT TALKING.</h4>
+							<p>
+								Transforming Organisations With Actionable Data And Insights
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="col-6">
+							<h4>TODAY’S BRIGHT STAR, TOMORROW’S LEADER.</h4>
+							<p>
+								The Power of Small: Unlocking the Potential of SMEs and Taking
+								them to the Next Level
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+
 		<main>
 			<section class="about-us text-left">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
-						<div class="col-12 col-md-8 about-content">
+						<div class="col-12 col-md-6 about-content">
 							<div class="content">
 								<h3>
 									It's a new world, and we are here to help you take it on.
@@ -46,7 +105,26 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-12 col-md-4 about-content"></div>
+						<div class="col-12 col-md-6 about-content"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="organization mt-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 organisation-item"></div>
+						<div class="col-12 col-md-6 organisation-item">
+							<div class="content">
+								<h3>Organisational Effectiveness</h3>
+								<h5>INNOVATE OR PERISH.</h5>
+								<p>
+									At Concinnity, we help companies become more resilient, more
+									innovation, more agile, innovative and more responsive in an
+									ever changing business environment.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -71,12 +149,114 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="related-sectors mb-5">
+				<div class="container">
+					<div class="row row-cols-1 row-cols-md-3 g-4">
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="./img/Research and Analytics slides.png"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">RESEARCH & ANALYTICS</h5>
+									<h6 class="card-title">CLEAR THINKING. STRAIGHT TALKING.</h6>
+									<p class="card-text">
+										Transforming Organisations With Actionable Data And Insights
+									</p>
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="./img/Customer Engagement homepage block.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">CUSTOMER ENGAGEMENT</h5>
+									<h6 class="card-title">Create Customer Passion</h6>
+									<p class="card-text">
+										We help businesses put the customer at the heart of
+										everything they do and enable them to optimise customer
+										lifetime value.
+									</p>
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="./img/Digital Solutions.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">DIGITAL SOLUTIONS</h5>
+									<h6 class="card-title">
+										REALISING THE POTENTIAL OF DIGITAL TRANSFORMATION
+									</h6>
+									<p class="card-text">
+										Our digital transformation helps organisations to create new
+										digital opportunities that drive business growth and
+										customer value.
+									</p>
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="./img/Human Capital Slide.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">HUMAN CAPITAL</h5>
+									<h6 class="card-title">LEARN. PERFORM. TRANSFORM.</h6>
+									<p class="card-text">
+										Concinnity creates the people advantage required for driving
+										business performance and growth.
+									</p>
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="./img/SME Advisory slide.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">SME Advisory</h5>
+									<h6 class="card-title">
+										TODAY’S BRIGHT STAR, TOMORROW’S LEADER.
+									</h6>
+									<p class="card-text">
+										The Power of Small: Unlocking the Potential of SMEs and
+										Taking them to the Next Level
+									</p>
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer-component></footer-component>
-
-		<script src="./js/main.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
 		<script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="./js/main.js"></script>
 		<script src="./js/components/header.js"></script>
 		<script src="./js/components/sidebar.js"></script>
 		<script src="./js/components/footer.js"></script>

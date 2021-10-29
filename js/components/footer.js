@@ -22,6 +22,7 @@ class Footer extends HTMLElement {
 						<p>E: hello@concinnity.com</p>
 					</div>
 				</div>
+				<p>2021 &copy; Concinnity</p>
 			</div>
 		</footer>
     `

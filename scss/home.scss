@@ -1,7 +1,7 @@
 .about-us {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	height: 40vh;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	// height: 40vh;
 	.about-content {
 		height: 40vh;
 		display: flex;
@@ -15,16 +15,34 @@
 	}
 }
 
+.organization {
+	margin-bottom: 40px;
+	margin-top: 40px;
+	// height: 40vh;
+	.organisation-item {
+		height: 40vh;
+		display: flex;
+		align-items: center;
+	}
+	.organisation-item:first-child {
+		background-image: url('../img/Organization\ effectivess.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
 .message-from-md {
 	margin-top: 80px;
 	margin-bottom: 80px;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url('../img/calculate.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	color: $white;
 	a {
 		&:hover {
@@ -34,6 +52,12 @@
 }
 
 @media (min-width: 1000px) {
+	.about-us {
+		height: 40vh;
+	}
+	.organization {
+		height: 40vh;
+	}
 	.message-from-md {
 		.content {
 			width: 60%;

@@ -12,7 +12,6 @@
 	font-family: 'muli';
 	src: local('muli'), url(../fonts/Muli.ttf) format('truetype');
 }
-
 $white: #fff;
 $dark: #000;
 $gray: #afaaaa;
@@ -21,7 +20,7 @@ $blue: #0b1f64;
 $red: #c00;
 $purple: #800080;
 $anchor-font: 'muli';
-$reqular-font: 'Merriweather';
+$reqular-font: 'muli';
 
 body {
 	background-color: $white;
@@ -41,9 +40,17 @@ a {
 main {
 	flex: 1 0 auto;
 }
-
-nav {
+.nav-scroll {
+	background-color: $white;
+}
+.nav-active {
 	background-color: transparent;
+}
+nav {
+	position: fixed;
+	width: 100%;
+	background-color: transparent;
+	z-index: 10;
 	color: $green;
 	ul li {
 		list-style: none;
@@ -122,6 +129,11 @@ nav {
 		.row {
 			overflow: auto;
 		}
+	}
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
 	}
 	.second-nav {
 		.wrapper {
@@ -214,6 +226,74 @@ nav {
 	}
 }
 
+.swiper {
+	height: 100vh;
+	.swiper-wrapper {
+		height: 100vh;
+		.swiper-slide {
+			background-color: $gray;
+			display: flex;
+			align-items: center;
+			color: $white;
+			font-size: 18px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			// animation: zoom 6s linear infinite;
+			&:nth-child(1) {
+				background-image: linear-gradient(
+						rgba(0, 0, 0, 0.7),
+						rgba(0, 0, 0, 0.7)
+					),
+					url('../img/Digital\ Solutions.jpg');
+			}
+			&:nth-child(2) {
+				background-image: linear-gradient(
+						rgba(0, 0, 0, 0.7),
+						rgba(0, 0, 0, 0.7)
+					),
+					url('../img/Customer\ Engagement\ Slide.jpg');
+			}
+			&:nth-child(3) {
+				background-image: linear-gradient(
+						rgba(0, 0, 0, 0.7),
+						rgba(0, 0, 0, 0.7)
+					),
+					url('../img/Human\ Capital\ Slide.jpg');
+			}
+			&:nth-child(4) {
+				background-image: linear-gradient(
+						rgba(0, 0, 0, 0.7),
+						rgba(0, 0, 0, 0.7)
+					),
+					url('../img/Research\ and\ Analytics\ slides.png');
+			}
+			&:nth-child(5) {
+				background-image: linear-gradient(
+						rgba(0, 0, 0, 0.7),
+						rgba(0, 0, 0, 0.7)
+					),
+					url('../img/SME\ Advisory\ slide.jpg');
+			}
+		}
+	}
+
+	// @keyframes zoom {
+	// 	0% {
+	// 		transform: scale(1.3);
+	// 	}
+	// 	15% {
+	// 		transform: scale(1);
+	// 	}
+	// 	85% {
+	// 		transform: scale(1);
+	// 	}
+	// 	100% {
+	// 		transform: scale(1.3);
+	// 	}
+	// }
+}
+
 nav input {
 	display: none;
 }
@@ -231,53 +311,12 @@ nav input {
 	font-weight: 600;
 }
 
-.banner {
-	width: 100%;
-	height: 45vh;
-	position: relative;
-	overflow: hidden;
-
-	.slider {
-		width: 100%;
-		height: 45vh;
-		position: absolute;
-		top: 0;
-
-		#slideImg {
-			width: 100%;
-			height: 45vh;
-			animation: zoom 6s linear infinite;
-		}
-
-		@keyframes zoom {
-			0% {
-				transform: scale(1.3);
-			}
-			15% {
-				transform: scale(1);
-			}
-			85% {
-				transform: scale(1);
-			}
-			100% {
-				transform: scale(1.3);
-			}
-		}
-	}
-	.overlay {
-		width: 100%;
-		height: 45vh;
-		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-		position: absolute;
-		top: 0;
-	}
-}
-
 .side-nav {
 	width: 100%;
 	height: 100vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 	position: fixed;
+	z-index: 10000;
 	top: 0;
 	display: none;
 	transition: background 600ms;
