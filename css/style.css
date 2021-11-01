@@ -946,6 +946,10 @@ nav input {
   transition: 0.5s;
 }
 
+.message-md {
+  padding-top: 116px;
+}
+
 @media (min-width: 1000px) {
   .about-us .about-content {
     height: 80vh;
