@@ -59,7 +59,7 @@ class Header extends HTMLElement {
 															<a href="#">Our People & Leadership</a>
 														</header>
 														<ul class="mega-links">
-															<li><a href="./messageMD.html">oMessage from Our MD</a></li>
+															<li><a href="./messageMD.html">Message from Our MD</a></li>
 														</ul>
 													</div>
 													<div class="col-6">
