@@ -44,23 +44,130 @@
 	background-size: cover;
 	background-attachment: fixed;
 	color: $white;
+	p {
+		margin-bottom: 28px;
+	}
 	a {
+		border: 1px solid $white;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
 		&:hover {
-			color: $red;
+			color: $white;
+			background-color: $blue;
+			border: 1px solid $blue;
+			transition: 0.5s;
+		}
+	}
+}
+
+.cabality {
+	.human-capacity {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url('../img/Human\ Capital\ Slide.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.customer-engage {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url('../img/Customer\ Engagement\ homepage\ block.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.sme-advisory {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url('../img/SME\ Advisory\ slide.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.digital-solutions {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url('../img/Digital\ Solutions.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.research-analize {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url('../img/Research\ and\ Analytics\ slides.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.content {
+		display: flex;
+		align-items: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		color: $white;
+		h3 {
+			font-size: 22px;
+			font-weight: bold;
+		}
+		h4 {
+			font-size: 14px;
+			font-weight: bold;
+		}
+		p {
+			margin-bottom: 35px;
+		}
+		a {
+			border: 1px solid $white;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&:hover {
+				color: $white;
+				background-color: $blue;
+				border: 1px solid $blue;
+				transition: 0.5s;
+			}
 		}
 	}
 }
 
 @media (min-width: 1000px) {
 	.about-us {
-		height: 40vh;
+		.about-content {
+			height: 80vh;
+			.content {
+				width: 400px;
+				margin: auto;
+			}
+		}
 	}
 	.organization {
-		height: 40vh;
+		.organisation-item {
+			height: 80vh;
+			.content {
+				width: 400px;
+				margin: auto;
+			}
+		}
 	}
 	.message-from-md {
 		.content {
 			width: 60%;
+		}
+	}
+
+	.cabality {
+		.content {
+			height: 80vh;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			h4 {
+				margin-top: 25px;
+			}
+			.inner-content {
+				width: 300px;
+				margin: auto;
+			}
 		}
 	}
 }
