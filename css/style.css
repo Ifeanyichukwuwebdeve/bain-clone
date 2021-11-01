@@ -74,7 +74,8 @@ nav .top-head {
   padding-top: 10px;
   display: none;
   justify-content: space-between;
-  font-size: 0.78rem;
+  font-size: 0.90rem;
+  color: #fff;
 }
 nav .top-head .top-head-item {
   border-right: 1px solid #afaaaa;

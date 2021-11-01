@@ -25,6 +25,9 @@ class Header extends HTMLElement {
 									<li class="top-head-item">
 										<a href="#"><i class="fab fa-linkedin-in"></i></a>
 									</li>
+									<li class="top-head-item">
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</li>
 								</ul>
 							</div>
 						</div>
