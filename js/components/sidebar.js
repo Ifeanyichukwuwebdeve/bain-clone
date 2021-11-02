@@ -98,7 +98,7 @@ class SideBarNav extends HTMLElement {
 						>
 					</li>
 					<li class="side-item">
-						<a href="./messageMD.html" class="side-item-link">oMessage from Our MD</a>
+						<a href="./messageMD.html" class="side-item-link">Message from Our MD</a>
 					</li>
 				</ul>
 				<!-- End of About -->

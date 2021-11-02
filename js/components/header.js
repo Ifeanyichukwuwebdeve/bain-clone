@@ -68,10 +68,14 @@ class Header extends HTMLElement {
 														</header>
 													</div>
 													<div class="col-6">
-														<header><a href="#">Alliance Ecosystem</a></header>
+														<header>
+														<a href="#">Alliance Ecosystem</a>
+														</header>
 													</div>
 													<div class="col-6">
-														<header><a href="#">Contact Concinnity</a></header>
+														<header>
+														<a href="#">Contact Concinnity</a>
+														</header>
 													</div>
 												</div>
 											</div>
