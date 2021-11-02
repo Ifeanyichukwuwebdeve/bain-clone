@@ -92,9 +92,15 @@ class Header extends HTMLElement {
 															<a href="#">ORGANISATION EFFECTIVENESS </a>
 														</header>
 														<ul class="mega-links">
-															<li><a href="#">Leadership Development</a></li>
-															<li><a href="#">Leadership Academy</a></li>
-															<li><a href="#">Leading from the Middle</a></li>
+															<li>
+															<header>
+															<a href="#">Leadership Development</a>
+															</header>
+															</li>
+															<ul class="leadership">
+																<li><a href="#">Leadership Academy</a></li>
+																<li><a href="#">Leading from the Middle</a></li>
+															</ul>
 															<li><a href="#">HR Solutions</a></li>
 															<li><a href="#">Talent Acquisition</a></li>
 															<li><a href="#">Group and Team Dynamics </a></li>

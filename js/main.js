@@ -64,6 +64,7 @@ window.onscroll = () => {
 		// document.querySelector('.top-head').style.display = 'none'
 		document.querySelector('nav').classList.add('nav-scroll')
 		document.querySelector('nav').classList.remove('nav-active')
+		document.querySelector('.top-head').style.color = '#afaaaa'
 	}
 	if (window.scrollY < 200) {
 		// document.querySelector('.top-head').style.display = 'flex'
