@@ -1016,6 +1016,10 @@ nav input {
 	background-size: cover;
 }
 
+.organization a {
+	border: 1px solid var(--dark);
+}
+
 .message-md {
 	padding-top: 116px;
 }
@@ -1028,7 +1032,10 @@ nav input {
 		width: 400px;
 		margin: auto;
 	}
-
+	.organization {
+		margin-bottom: 120px;
+		margin-top: 120px;
+	}
 	.organization .organisation-item {
 		height: 80vh;
 	}
