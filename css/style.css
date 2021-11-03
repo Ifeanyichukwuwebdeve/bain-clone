@@ -862,7 +862,7 @@ nav input {
 	margin-top: 70px;
 }
 .about-us .about-content {
-	height: 40vh;
+	height: 55vh;
 	display: flex;
 	align-items: center;
 }
@@ -991,6 +991,31 @@ nav input {
 	transition: 0.5s;
 }
 
+/* For orgainization */
+.cabality .organization .content {
+	display: flex;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: var(--dark);
+}
+.organization {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.organization .organisation-item {
+	height: 55vh;
+	display: flex;
+	align-items: center;
+	border-radius: 100%;
+}
+.organization .organisation-item:first-child {
+	background-image: url('../img/Organization effectivess.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .message-md {
 	padding-top: 116px;
 }
@@ -1008,7 +1033,7 @@ nav input {
 		height: 80vh;
 	}
 	.organization .organisation-item .content {
-		width: 400px;
+		width: 450px;
 		margin: auto;
 	}
 
@@ -1075,7 +1100,7 @@ nav input {
 	}
 
 	.footer img {
-		width: 240px;
+		width: 280px;
 	}
 }
 
